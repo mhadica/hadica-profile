@@ -35,34 +35,56 @@ const Projects = () => {
     {
       id: 1,
       title: "UPI Based Service Automation",
-      description: "Django framework used for the integration of Razorpay with web automation successfully implemented.",
+      description: "Django framework used for the integration of Razorpay with web automation. Payment and service request systems for local business operations.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop",
       tags: ["Django", "Razorpay", "Web Automation", "Git"],
-      githubUrl: "https://github.com/mhadica/service-automation"
+      githubUrl: "https://github.com/mhadica/service-automation",
+      liveUrl: "https://mhadica.github.io/service-automation/"
     },
     {
       id: 2,
       title: "EasyLancer",
-      description: "A seamless communication platform tailored for freelancers and their clients with intelligent prompt assistance.",
+      description: "A seamless communication platform tailored for freelancers and their clients with intelligent prompt assistance and automated project management.",
       image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "Tailwind CSS", "Node.js"],
-      githubUrl: "https://github.com/mhadica/easylancer"
+      tags: ["React", "Tailwind CSS", "Node.js", "Firebase"],
+      githubUrl: "https://github.com/mhadica/easylancer",
+      liveUrl: "https://mhadica.github.io/easylancer/"
     },
     {
       id: 3,
       title: "Line Follower Robot",
-      description: "Car which automatically follows a black line on a white background using Arduino programming.",
+      description: "Car which automatically follows a black line on a white background using Arduino programming and sensor integration for precise navigation.",
       image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=600&auto=format&fit=crop",
-      tags: ["Arduino", "Robotics", "C++"],
-      githubUrl: "#"
+      tags: ["Arduino", "Robotics", "C++", "Electronics"],
+      githubUrl: "https://github.com/mhadica/line-follower",
+      liveUrl: "#"
     },
     {
       id: 4,
       title: "Hotel Room Booking Website",
-      description: "Developed a responsive hotel booking system with user authentication and real-time availability.",
+      description: "Developed a responsive hotel booking system with user authentication, real-time availability checking and secure payment processing.",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "Node.js", "MongoDB"],
-      githubUrl: "#"
+      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      githubUrl: "https://github.com/mhadica/hotel-booking",
+      liveUrl: "https://mhadica.github.io/hotel-booking/"
+    },
+    {
+      id: 5,
+      title: "Portfolio Website",
+      description: "Personal portfolio website showcasing my skills, experience and projects with a responsive design and interactive elements.",
+      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600&auto=format&fit=crop",
+      tags: ["React", "Tailwind CSS", "Responsive Design"],
+      githubUrl: "https://github.com/mhadica/mhadica.github.io",
+      liveUrl: "https://mhadica.github.io/mhadica/"
+    },
+    {
+      id: 6,
+      title: "React Weather App",
+      description: "Weather application built with React that provides real-time weather updates and forecasts using external API integration.",
+      image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?q=80&w=600&auto=format&fit=crop",
+      tags: ["React", "OpenWeather API", "CSS3"],
+      githubUrl: "https://github.com/mhadica/weather-app",
+      liveUrl: "https://mhadica.github.io/weather-app/"
     }
   ];
 
@@ -71,7 +93,7 @@ const Projects = () => {
       <div className="container mx-auto">
         <h2 className="section-heading text-center">Key Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-16">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -92,7 +114,7 @@ const Projects = () => {
               
               <div className="p-6">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-xl font-bold text-classic-navy">
+                  <h3 className="text-xl font-bold text-classic-navy line-clamp-1">
                     {project.title}
                   </h3>
                   
@@ -106,7 +128,7 @@ const Projects = () => {
                   </a>
                 </div>
                 
-                <p className="mt-3 text-gray-600">
+                <p className="mt-3 text-gray-600 text-sm line-clamp-3">
                   {project.description}
                 </p>
                 
@@ -122,13 +144,19 @@ const Projects = () => {
                 </div>
                 
                 <div className="mt-6">
-                  <Button
-                    variant="ghost"
-                    className="text-classic-navy hover:text-classic-gold p-0 group flex items-center"
+                  <a 
+                    href={project.liveUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   >
-                    View Project
-                    <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  </Button>
+                    <Button
+                      variant="ghost"
+                      className="text-classic-navy hover:text-classic-gold hover:bg-transparent p-0 group flex items-center"
+                    >
+                      View Project
+                      <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>

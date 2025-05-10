@@ -13,8 +13,27 @@ const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Add smooth scrolling for all internal links
+    const handleInternalLinks = () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href && href !== '#') {
+            e.preventDefault();
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    };
+
     const timer = setTimeout(() => {
       setIsLoaded(true);
+      handleInternalLinks();
     }, 300);
 
     return () => clearTimeout(timer);

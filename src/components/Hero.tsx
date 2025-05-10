@@ -14,6 +14,12 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const scrollToProjects = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects');
+    projectsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="min-h-[90vh] flex items-center relative overflow-hidden">
       {/* Animated background elements */}
@@ -36,11 +42,17 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-classic-navy hover:bg-classic-navy/90 group">
+            <Button 
+              className="bg-classic-navy hover:bg-classic-navy/90 group text-white" 
+              onClick={scrollToProjects}
+            >
               View My Work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" className="border-classic-gold text-classic-gold hover:text-classic-gold/90 hover:border-classic-gold/80">
+            <Button 
+              variant="outline" 
+              className="border-classic-gold text-classic-gold hover:bg-classic-gold/10 hover:text-classic-gold hover:border-classic-gold"
+            >
               Download CV
             </Button>
           </div>
