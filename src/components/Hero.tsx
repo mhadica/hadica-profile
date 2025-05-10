@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { ArrowRight, GitHub, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -50,7 +50,7 @@ const Hero = () => {
                className="p-3 border border-gray-300 rounded-full text-classic-navy hover:text-classic-gold hover:border-classic-gold transition-colors duration-300"
                target="_blank"
                rel="noopener noreferrer">
-              <GitHub className="h-5 w-5" />
+              <Github className="h-5 w-5" />
             </a>
             <a href="https://linkedin.com/in/mhadica" 
                className="p-3 border border-gray-300 rounded-full text-classic-navy hover:text-classic-gold hover:border-classic-gold transition-colors duration-300"
