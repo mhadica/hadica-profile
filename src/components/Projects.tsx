@@ -2,9 +2,11 @@
 import { useState, useEffect } from "react";
 import { ArrowUpRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState<number[]>([]);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -90,10 +92,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section bg-classic-cream/50">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <h2 className="section-heading text-center">Key Projects</h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-10 md:mt-16">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -104,17 +106,18 @@ const Projects = () => {
                   : "opacity-0 translate-y-20"
               }`}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-36 sm:h-40 md:h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
               
-              <div className="p-6">
+              <div className="p-4 md:p-6">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-xl font-bold text-classic-navy line-clamp-1">
+                  <h3 className="text-lg md:text-xl font-bold text-classic-navy line-clamp-1">
                     {project.title}
                   </h3>
                   
@@ -124,16 +127,16 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-classic-navy hover:text-classic-gold transition-colors"
                   >
-                    <Github className="h-5 w-5" />
+                    <Github className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
                 </div>
                 
-                <p className="mt-3 text-gray-600 text-sm line-clamp-3">
+                <p className="mt-2 md:mt-3 text-gray-600 text-xs md:text-sm line-clamp-3">
                   {project.description}
                 </p>
                 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag, idx) => (
+                <div className="mt-3 md:mt-4 flex flex-wrap gap-1 md:gap-2">
+                  {project.tags.slice(0, isMobile ? 2 : 4).map((tag, idx) => (
                     <span
                       key={idx}
                       className="text-xs px-2 py-1 rounded-full bg-classic-navy/10 text-classic-navy"
@@ -141,9 +144,14 @@ const Projects = () => {
                       {tag}
                     </span>
                   ))}
+                  {project.tags.length > (isMobile ? 2 : 4) && (
+                    <span className="text-xs px-2 py-1 rounded-full bg-classic-navy/10 text-classic-navy">
+                      +{project.tags.length - (isMobile ? 2 : 4)}
+                    </span>
+                  )}
                 </div>
                 
-                <div className="mt-6">
+                <div className="mt-4 md:mt-6">
                   <a 
                     href={project.liveUrl} 
                     target="_blank" 
@@ -151,10 +159,10 @@ const Projects = () => {
                   >
                     <Button
                       variant="ghost"
-                      className="text-classic-navy hover:text-classic-gold hover:bg-transparent p-0 group flex items-center"
+                      className="text-classic-navy hover:text-classic-gold hover:bg-transparent p-0 group flex items-center text-sm md:text-base"
                     >
                       View Project
-                      <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                      <ArrowUpRight className="ml-1 md:ml-2 h-3 w-3 md:h-4 md:w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </Button>
                   </a>
                 </div>
@@ -163,10 +171,10 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <Button
             variant="outline"
-            className="border-classic-navy text-classic-navy hover:bg-classic-navy/5"
+            className="border-classic-navy text-classic-navy hover:bg-classic-navy/5 text-sm md:text-base"
           >
             View All Projects
           </Button>

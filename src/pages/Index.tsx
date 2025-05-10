@@ -26,6 +26,14 @@ const Index = () => {
               targetElement.scrollIntoView({
                 behavior: 'smooth'
               });
+              // Close mobile menu if open
+              const mobileMenuButton = document.querySelector('button[aria-label="Toggle menu"]');
+              if (mobileMenuButton) {
+                const mobileMenu = document.querySelector('.md\\:hidden.fixed');
+                if (mobileMenu) {
+                  mobileMenuButton.click();
+                }
+              }
             }
           }
         });
@@ -48,13 +56,13 @@ const Index = () => {
 
       {/* Loading Screen */}
       {!isLoaded && (
-        <div className="fixed inset-0 bg-classic-cream z-50 flex flex-col items-center justify-center">
-          <div className="mb-6 relative">
-            <div className="h-20 w-20 rounded-full border-4 border-classic-gold/20 border-t-classic-gold animate-spin"></div>
-            <Loader className="h-10 w-10 text-classic-navy absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="fixed inset-0 bg-classic-cream z-50 flex flex-col items-center justify-center p-4">
+          <div className="mb-4 md:mb-6 relative">
+            <div className="h-16 w-16 md:h-20 md:w-20 rounded-full border-4 border-classic-gold/20 border-t-classic-gold animate-spin"></div>
+            <Loader className="h-8 w-8 md:h-10 md:w-10 text-classic-navy absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
           </div>
-          <h2 className="text-2xl font-serif text-classic-navy animate-pulse">Loading Portfolio</h2>
-          <div className="mt-2 h-1 w-48 bg-gray-200 rounded-full overflow-hidden">
+          <h2 className="text-xl md:text-2xl font-serif text-classic-navy animate-pulse">Loading Portfolio</h2>
+          <div className="mt-2 h-1 w-36 md:w-48 bg-gray-200 rounded-full overflow-hidden">
             <div className="h-full bg-classic-gold animate-[loading_1.5s_ease-in-out_infinite]"></div>
           </div>
         </div>
