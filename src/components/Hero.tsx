@@ -86,7 +86,7 @@ const Hero = () => {
             {/* Main image - optimized size */}
             <div className="relative overflow-hidden rounded-tl-[50px] md:rounded-tl-[80px] rounded-br-[50px] md:rounded-br-[80px] shadow-xl border-4 md:border-8 border-white">
               <img 
-                src="/lovable-uploads/3d2fbf04-2074-49b2-88de-2e1dc460fdce.png" 
+                src="/lovable-uploads/hadi.jpeg" 
                 alt="Mohammed Hadi" 
                 className="w-full h-auto object-cover aspect-[4/5]"
                 loading="eager"
