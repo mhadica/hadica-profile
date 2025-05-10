@@ -51,7 +51,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-classic-gold text-classic-gold hover:bg-classic-gold/10 hover:text-classic-gold hover:border-classic-gold"
+              className="border-classic-gold text-classic-gold hover:bg-classic-gold/5 hover:text-classic-gold hover:border-classic-gold"
             >
               Download CV
             </Button>
@@ -77,18 +77,21 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Image */}
+        {/* Image - Reduced size */}
         <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="relative">
+          <div className="relative max-w-md mx-auto md:mx-0">
             {/* Decorative elements */}
             <div className="absolute inset-0 bg-classic-gold/10 rounded-tl-[100px] rounded-br-[100px] transform rotate-3 scale-105"></div>
             
-            {/* Main image */}
+            {/* Main image - optimized size */}
             <div className="relative overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-xl border-8 border-white">
               <img 
                 src="/lovable-uploads/3d2fbf04-2074-49b2-88de-2e1dc460fdce.png" 
                 alt="Mohammed Hadi" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover aspect-[4/5]"
+                loading="eager"
+                width="400"
+                height="500"
               />
             </div>
             

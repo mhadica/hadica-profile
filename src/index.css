@@ -90,4 +90,21 @@
   .accent-divider {
     @apply h-1 w-24 bg-classic-gold my-4 mx-auto rounded;
   }
+
+  /* Loading animation */
+  @keyframes loading {
+    0% {
+      width: 0%;
+      transform: translateX(0);
+    }
+    50% {
+      width: 100%;
+      transform: translateX(0);
+    }
+    100% {
+      width: 100%;
+      transform: translateX(100%);
+    }
+  }
 }
+
