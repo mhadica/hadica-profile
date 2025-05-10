@@ -30,7 +30,7 @@ const Index = () => {
               const mobileMenuButton = document.querySelector('button[aria-label="Toggle menu"]');
               if (mobileMenuButton) {
                 const mobileMenu = document.querySelector('.md\\:hidden.fixed');
-                if (mobileMenu) {
+                if (mobileMenu && mobileMenuButton instanceof HTMLElement) {
                   mobileMenuButton.click();
                 }
               }
