@@ -40,8 +40,8 @@ const Projects = () => {
       description: "Django framework used for the integration of Razorpay with web automation. Payment and service request systems for local business operations.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop",
       tags: ["Django", "Razorpay", "Web Automation", "Git"],
-      githubUrl: "https://github.com/mhadica/service-automation",
-      liveUrl: "https://mhadica.github.io/service-automation/"
+      githubUrl: "https://github.com/mhadica/Cloud_json",
+      liveUrl: ""
     },
     {
       id: 2,
@@ -49,8 +49,8 @@ const Projects = () => {
       description: "A seamless communication platform tailored for freelancers and their clients with intelligent prompt assistance and automated project management.",
       image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=600&auto=format&fit=crop",
       tags: ["React", "Tailwind CSS", "Node.js", "Firebase"],
-      githubUrl: "https://github.com/mhadica/easylancer",
-      liveUrl: "https://mhadica.github.io/easylancer/"
+      githubUrl: "https://github.com/AlthafMuhammad2115/Kraft-Knight",
+      liveUrl: ""
     },
     {
       id: 3,
@@ -59,7 +59,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=600&auto=format&fit=crop",
       tags: ["Arduino", "Robotics", "C++", "Electronics"],
       githubUrl: "https://github.com/mhadica/line-follower",
-      liveUrl: "#"
+      liveUrl: ""
     },
     {
       id: 4,
@@ -67,8 +67,8 @@ const Projects = () => {
       description: "Developed a responsive hotel booking system with user authentication, real-time availability checking and secure payment processing.",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "https://github.com/mhadica/hotel-booking",
-      liveUrl: "https://mhadica.github.io/hotel-booking/"
+      githubUrl: "",
+      liveUrl: "https://hotel-crystal-park.vercel.app/"
     },
     {
       id: 5,
@@ -81,12 +81,12 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "React Weather App",
-      description: "Weather application built with React that provides real-time weather updates and forecasts using external API integration.",
+      title: "IEI TKMCE Club Website",
+      description: "I led a team responsible for designing, developing, and deploying a fully functional website that showcased the club's activities and initiatives. This involved coordinating with team members, assigning tasks, ensuring timely progress, and maintaining high standards of quality throughout the development process. The final website served as a central platform for communicating the club's events, updates, and achievements to a wider audience.",
       image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?q=80&w=600&auto=format&fit=crop",
       tags: ["React", "OpenWeather API", "CSS3"],
       githubUrl: "https://github.com/mhadica/weather-app",
-      liveUrl: "https://mhadica.github.io/weather-app/"
+      liveUrl: "https://ieitkmce.vercel.app/"
     }
   ];
 
