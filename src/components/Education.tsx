@@ -124,7 +124,18 @@ const Education = () => {
                   {course}
                 </div>
               ))}
-              
+              <a
+            href="https://www.linkedin.com/in/mhadica/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              variant="outline"
+              className="border-classic-navy text-classic-navy hover:bg-classic-navy/5 text-sm md:text-base"
+            >
+              View More Courses on LinkedIn
+            </Button>
+          </a>
             </div>
           </div>
         </div>
