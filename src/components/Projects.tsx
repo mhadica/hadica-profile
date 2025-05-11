@@ -172,13 +172,19 @@ const Projects = () => {
         </div>
         
         <div className="text-center mt-8 md:mt-12">
-          <Button
-            variant="outline"
+          <a
             href="https://github.com/mhadica?tab=repositories"
-            className="border-classic-navy text-classic-navy hover:bg-classic-navy/5 text-sm md:text-base"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View All Projects
-          </Button>
+            <Button
+              variant="outline"
+              className="border-classic-navy text-classic-navy hover:bg-classic-navy/5 text-sm md:text-base"
+            >
+              View All Projects
+            </Button>
+          </a>
+
         </div>
       </div>
     </section>
