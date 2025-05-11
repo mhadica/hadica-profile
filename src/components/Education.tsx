@@ -48,7 +48,7 @@ const Education = () => {
     "C Programming",
     "Python",
     "IoT",
-    "Dbms"
+    "Dbms",
     "Big Data"
   ];
 
