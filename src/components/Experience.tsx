@@ -28,31 +28,26 @@ const Experience = () => {
 
   const experiences = [
     {
-      role: "Web Head",
-      company: "IEI TKMCE",
+      role: "React Developer Intern",
+      company: "GPS RENEWABLES",
+      period: "July 2025 - Present",
+      icon: <Code className="h-5 w-5 md:h-6 md:w-6" />,
+      details: [
+        "Enhanced an existing PDF annotation platform by implementing complete Polyline support",
+        "Designed and developed both the frontend drawing interface and backend integration",
+        "Ensured smooth persistence, decoding, and export compatibility with standard PDF formats",
+        "Convert Konva coordinates to PDF space accurately"
+      ]
+    },
+    {
+      role: "Web Head - Technical Analyst",
+      company: "IEI - IEDC TKMCE",
       period: "Aug 2023 - Present",
       icon: <Monitor className="h-5 w-5 md:h-6 md:w-6" />,
       details: [
         "Managed a team to build a complete website for the club activities",
         "Intelligently utilized the git version controller",
-        "The website is currently running @ \"www.ieitkmce.com\""
-      ]
-    },
-    {
-      role: "React Front-end Developer",
-      company: "Freelancer",
-      period: "Apr 2024 - Present",
-      icon: <Code className="h-5 w-5 md:h-6 md:w-6" />,
-      details: [
-        "Collaborated with clients, enhancing user interfaces and delivering responsive web designs"
-      ]
-    },
-    {
-      role: "Technical Analyst",
-      company: "IEDC TKMCE",
-      period: "Feb 2024 - Present",
-      icon: <Calendar className="h-5 w-5 md:h-6 md:w-6" />,
-      details: [
+        "The website is currently running at www.ieitkmce.com",
         "Worked on the technical aspects of each event organized by IEDC TKMCE"
       ]
     }

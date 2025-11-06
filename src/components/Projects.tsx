@@ -36,55 +36,55 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "UPI Based Service Automation",
-      description: "Django framework used for the integration of Razorpay with web automation. Payment and service request systems for local business operations.",
+      title: "UPI-Based Service Automation",
+      description: "Integrated Razorpay payment gateway for seamless online transactions. Developed full-stack application with React frontend and Django backend. ESP32-AWS S3 bucket-based hardware solution.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop",
-      tags: ["Django", "Razorpay", "Web Automation", "Git"],
+      tags: ["Django", "React", "Razorpay", "AWS S3", "ESP32"],
       githubUrl: "https://github.com/mhadica/Cloud_json",
       liveUrl: ""
     },
     {
       id: 2,
       title: "EasyLancer",
-      description: "A seamless communication platform tailored for freelancers and their clients with intelligent prompt assistance and automated project management.",
+      description: "A seamless communication platform tailored for freelancers and their clients featuring intelligent prompt assistance, dynamic message generation, multi-platform accessibility, customizable prompt library, and analytics dashboard.",
       image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "Tailwind CSS", "Node.js", "Firebase"],
+      tags: ["React", "Firebase", "Analytics", "Node.js"],
       githubUrl: "https://github.com/AlthafMuhammad2115/Kraft-Knight",
       liveUrl: ""
     },
     {
       id: 3,
-      title: "Line Follower Robot",
-      description: "Car which automatically follows a black line on a white background using Arduino programming and sensor integration for precise navigation.",
+      title: "CNC Writing Machine",
+      description: "Developed CNC writing machine using Arduino IDE. Gained experience in research, programming, teamwork, and leadership. Worked with various hardware components and tools like Inkscape and GRBL controller.",
       image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=600&auto=format&fit=crop",
-      tags: ["Arduino", "Robotics", "C++", "Electronics"],
-      githubUrl: "https://github.com/mhadica/line-follower",
+      tags: ["Arduino", "GRBL", "Inkscape", "Hardware"],
+      githubUrl: "",
       liveUrl: ""
     },
     {
       id: 4,
-      title: "Hotel Room Booking Website",
-      description: "Developed a responsive hotel booking system with user authentication, real-time availability checking and secure payment processing.",
-      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "",
-      liveUrl: "https://hotel-crystal-park.vercel.app/"
+      title: "Line Follower Robot",
+      description: "A car that automatically follows a black line on a white background using Arduino programming and sensor integration.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop",
+      tags: ["Arduino", "Robotics", "C++", "Sensors"],
+      githubUrl: "https://github.com/mhadica/line-follower",
+      liveUrl: ""
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "Personal portfolio website showcasing my skills, experience and projects with a responsive design and interactive elements.",
-      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "Tailwind CSS", "Responsive Design"],
-      githubUrl: "https://github.com/mhadica/mhadica.github.io",
-      liveUrl: "https://mhadica.github.io/mhadica/"
+      title: "Apps Script & Automation Projects",
+      description: "Effectively utilized AppScript for data collection, managed authentication using Firebase, created a WhatsApp bot using CSML, and developed a middleman between HTTP and HTTPS using Python server.",
+      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop",
+      tags: ["AppScript", "Firebase", "CSML", "Python"],
+      githubUrl: "",
+      liveUrl: ""
     },
     {
       id: 6,
       title: "IEI TKMCE Club Website",
-      description: "I led a team responsible for designing, developing, and deploying a fully functional website that showcased the club's activities and initiatives. This involved coordinating with team members, assigning tasks, ensuring timely progress, and maintaining high standards of quality throughout the development process. The final website served as a central platform for communicating the club's events, updates, and achievements to a wider audience.",
+      description: "Led a team to design, develop, and deploy a fully functional website showcasing club activities and initiatives. Coordinated with team members, assigned tasks, and maintained high quality standards.",
       image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?q=80&w=600&auto=format&fit=crop",
-      tags: ["React", "OpenWeather API", "CSS3"],
+      tags: ["React", "Team Management", "Git", "Web Development"],
       githubUrl: "https://github.com/mhadica/weather-app",
       liveUrl: "https://ieitkmce.vercel.app/"
     }

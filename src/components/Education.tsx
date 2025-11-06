@@ -25,14 +25,19 @@ const Education = () => {
   
   const certifications = [
     {
-      title: "Website Development",
-      organization: "Majors: HTML, CSS, JavaScript and Tailwind",
+      title: "Big Data Computing",
+      organization: "NPTEL",
       icon: <Award className="h-6 w-6 md:h-8 md:w-8 text-classic-gold mb-3 md:mb-4" />
     },
     {
-      title: "Hackathon Certification",
-      organization: "IEDC Tkmce",
+      title: "Website Development Certification",
+      organization: "TinkerHub Foundation - HTML, CSS, JavaScript, Tailwind",
       icon: <Book className="h-6 w-6 md:h-8 md:w-8 text-classic-gold mb-3 md:mb-4" />
+    },
+    {
+      title: "Hackathon Certification",
+      organization: "IEDC TKMCE",
+      icon: <Award className="h-6 w-6 md:h-8 md:w-8 text-classic-gold mb-3 md:mb-4" />
     },
     {
       title: "Volunteering Certification",
@@ -42,14 +47,14 @@ const Education = () => {
   ];
 
   const courses = [
-    "Object Oriented Programming",
-    "Data Structures",
-    "Operating System",
+    "Data Structures & Algorithms",
+    "Operating Systems",
+    "OOPS",
+    "DBMS",
+    "Big Data",
     "C Programming",
-    "Python",
-    "IoT",
-    "Dbms",
-    "Big Data"
+    "Problem Solving",
+    "Team Collaboration"
   ];
 
   return (

@@ -31,20 +31,26 @@ const Skills = () => {
     { id: "all", name: "All Skills", icon: <Code className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" /> },
     { id: "frontend", name: "Frontend", icon: <Layout className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" /> },
     { id: "backend", name: "Backend", icon: <Server className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" /> },
-    { id: "database", name: "Database", icon: <Database className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" /> },
+    { id: "tools", name: "Tools", icon: <Database className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" /> },
   ];
   
   const skills = [
-    { name: "HTML", level: 90, category: "frontend" },
-    { name: "CSS", level: 85, category: "frontend" },
-    { name: "JavaScript", level: 80, category: "frontend" },
-    { name: "React", level: 85, category: "frontend" },
-    { name: "Tailwind CSS", level: 80, category: "frontend" },
+    { name: "JavaScript", level: 90, category: "frontend" },
+    { name: "TypeScript", level: 85, category: "frontend" },
+    { name: "React", level: 90, category: "frontend" },
+    { name: "Tailwind CSS", level: 85, category: "frontend" },
+    { name: "Node.js", level: 80, category: "backend" },
+    { name: "Express", level: 80, category: "backend" },
     { name: "Django", level: 75, category: "backend" },
-    { name: "Python", level: 70, category: "backend" },
-    { name: "C Programming", level: 75, category: "backend" },
-    { name: "IoT", level: 65, category: "backend" },
-    { name: "DBms", level: 70, category: "database" }
+    { name: "Firebase", level: 80, category: "backend" },
+    { name: "Java", level: 85, category: "backend" },
+    { name: "C", level: 75, category: "backend" },
+    { name: "Git", level: 85, category: "tools" },
+    { name: "AWS", level: 70, category: "tools" },
+    { name: "MySQL", level: 75, category: "tools" },
+    { name: "JWT", level: 80, category: "tools" },
+    { name: "Razorpay", level: 75, category: "tools" },
+    { name: "Vercel", level: 80, category: "tools" }
   ];
   
   const filteredSkills = categoryFilter === "all" 
