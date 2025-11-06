@@ -43,12 +43,7 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
-      icon: <Phone className="h-6 w-6" />,
-      label: "Phone",
-      value: "+91 9562439603",
-      link: "tel:+919562439603"
-    },
+    
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
