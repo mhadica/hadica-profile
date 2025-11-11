@@ -16,6 +16,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/resume" element={<PdfRedirect />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -23,5 +24,9 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
+function PdfRedirect() {
+  // Automatically redirect to the file
+  window.location.href = "/Resume.pdf";
+  return null;
+}
 export default App;
