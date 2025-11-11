@@ -24,9 +24,17 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-function PdfRedirect() {
-  // Automatically redirect to the file
-  window.location.href = "/Resume.pdf";
-  return null;
+function PdfViewer() {
+  return (
+    <div style={{ height: "100vh" }}>
+      <iframe
+        src="/Resume.pdf"
+        title="PDF Viewer"
+        width="100%"
+        height="100%"
+        style={{ border: "none" }}
+      />
+    </div>
+  );
 }
 export default App;
